@@ -47,7 +47,7 @@ public class Main {
 			pile.put(curUp1);
 			pile.put(curUp2);
 			// WAR while the up cards are equal and both hands are not empty
-			while (curUp1.compareTo(curUp2) == 0) 
+			while (curUp1.compareTo(curUp2) == 0
 					&& !(hands[0].isEmpty() && hands[1].isEmpty())) {
 				System.out.println("WAR!");
 				/* each player puts down 4 cards (or less, if they don't 
