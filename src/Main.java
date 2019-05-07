@@ -4,7 +4,7 @@ public class Main {
 	private Queue<Card>[] hands;
 	private Deck deck;
 	public Main() {
-		// necessary cast because apparently Java doesn't allow generic type arrays
+		// necessary cast because Java doesn't allow generic type arrays
 		hands = (Queue<Card>[]) new Queue[2]; 
 		hands[0] = new Queue<Card>();
 		hands[1] = new Queue<Card>();
@@ -40,14 +40,15 @@ public class Main {
 			hands[1].put(hands[0].remove());
 			hands[1].put(hands[1].remove());
 		} else { // WAR!
-			Stack<Card> pile = new Stack<Card>(); // the pile of cards that winner collects at end
+			Stack<Card> pile = new Stack<Card>();
 			Card curUp1 = hands[0].remove(); // the current up card of player 1
 			Card curUp2 = hands[1].remove(); // the current up card of player 2
-			// put the current up cards in the pile that will be collected at the end
+			// put the current up cards in the pile
 			pile.put(curUp1);
 			pile.put(curUp2);
 			// WAR while the up cards are equal and both hands are not empty
-			while (curUp1.getRank() == curUp2.getRank() && !(hands[0].isEmpty() && hands[1].isEmpty())) {
+			while (curUp1.getRank() == curUp2.getRank() 
+					&& !(hands[0].isEmpty() && hands[1].isEmpty())) {
 				System.out.println("WAR!");
 				/* each player puts down 4 cards (or less, if they don't 
 				 * have 4 cards), with the last one face up */
@@ -63,12 +64,12 @@ public class Main {
 				}
 				System.out.println(curUp1 + " vs " + curUp2);
 			}
-			if (curUp1.getRank() > curUp2.getRank()) { // player 1 wins war!
+			if (curUp1.getRank() > curUp2.getRank()) { // player 1 wins war
 				addToHand(pile, hands[0]);
-				System.out.println("Player 1 wins the pile!");
-			} else if (curUp2.getRank() > curUp1.getRank()) { // player 2 wins war!
+				System.out.println("Player 1 wins the war!");
+			} else if (curUp2.getRank() > curUp1.getRank()) { // player 2 wins war
 				addToHand(pile, hands[1]);
-				System.out.println("Player 2 wins the pile!");
+				System.out.println("Player 2 wins the war!");
 			}
 		}
 		System.out.println("Player 1: " + hands[0].size() + " cards," 
@@ -95,7 +96,6 @@ public class Main {
 		System.out.println();
 		while (!hands[0].isEmpty() && !hands[1].isEmpty()) {
 			playRound();
-			count++;
 		}
 		// check for winner (or tie)
 		if (hands[0].isEmpty() && hands[1].isEmpty()) {
@@ -105,13 +105,11 @@ public class Main {
 		} else if (hands[1].isEmpty()) {
 			System.out.println("The winner is... Player 1!");
 		}
-		System.out.println(count + " rounds played");
 	}
 	
 	public static void main(String[] args) {
 		Main runner = new Main();
 		runner.playWar();
 	}
-	int count = 0;
 	
 }
