@@ -30,12 +30,12 @@ public class Main {
 	 */
 	public void playRound() {
 		System.out.println(hands[0].peek() + " vs " + hands[1].peek());
-		if (hands[0].peek().getRank() > hands[1].peek().getRank()) {
+		if (hands[0].peek().compareTo(hands[1].peek()) > 0) {
 			System.out.println("Player 1 gets both cards!");
 			hands[0].put(hands[1].remove());
 			hands[0].put(hands[0].remove());
 		}
-		else if (hands[1].peek().getRank() > hands[0].peek().getRank()) {
+		else if (hands[1].peek().compareTo(hands[0].peek()) > 0) {
 			System.out.println("Player 2 gets both cards!");
 			hands[1].put(hands[0].remove());
 			hands[1].put(hands[1].remove());
@@ -47,7 +47,7 @@ public class Main {
 			pile.put(curUp1);
 			pile.put(curUp2);
 			// WAR while the up cards are equal and both hands are not empty
-			while (curUp1.getRank() == curUp2.getRank() 
+			while (curUp1.compareTo(curUp2) == 0) 
 					&& !(hands[0].isEmpty() && hands[1].isEmpty())) {
 				System.out.println("WAR!");
 				/* each player puts down 4 cards (or less, if they don't 
@@ -64,10 +64,10 @@ public class Main {
 				}
 				System.out.println(curUp1 + " vs " + curUp2);
 			}
-			if (curUp1.getRank() > curUp2.getRank()) { // player 1 wins war
+			if (curUp1.compareTo(curUp2) > 0) { // player 1 wins war
 				addToHand(pile, hands[0]);
 				System.out.println("Player 1 wins the war!");
-			} else if (curUp2.getRank() > curUp1.getRank()) { // player 2 wins war
+			} else if (curUp2.compareTo(curUp1) > 0) { // player 2 wins war
 				addToHand(pile, hands[1]);
 				System.out.println("Player 2 wins the war!");
 			}
