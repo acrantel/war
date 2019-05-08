@@ -3,12 +3,15 @@ public class Main {
 	/** an array of two elements to store the players' hands */
 	private Queue<Card>[] hands;
 	private Deck deck;
+	private int rounds;
+	
 	public Main() {
 		// necessary cast because Java doesn't allow generic type arrays
 		hands = (Queue<Card>[]) new Queue[2]; 
 		hands[0] = new Queue<Card>();
 		hands[1] = new Queue<Card>();
 		deck = new Deck();
+		rounds = 0;
 	}
 	
 	/**
@@ -96,6 +99,7 @@ public class Main {
 		System.out.println();
 		while (!hands[0].isEmpty() && !hands[1].isEmpty()) {
 			playRound();
+			rounds++;
 		}
 		// check for winner (or tie)
 		if (hands[0].isEmpty() && hands[1].isEmpty()) {
@@ -105,6 +109,7 @@ public class Main {
 		} else if (hands[1].isEmpty()) {
 			System.out.println("The winner is... Player 1!");
 		}
+		System.out.println(rounds + " rounds played");
 	}
 	
 	public static void main(String[] args) {
