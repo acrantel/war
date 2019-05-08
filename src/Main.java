@@ -20,8 +20,8 @@ public class Main {
 	public void deal() {
 		deck.shuffle();
 		for (int i = 0; i < 26; i++) {
-			hands[0].add(deck.deal());
-			hands[1].add(deck.deal());
+			hands[0].put(deck.deal());
+			hands[1].put(deck.deal());
 		}
 	}
 	
@@ -34,12 +34,12 @@ public class Main {
 	public void playRound() {
 		System.out.println(hands[0].peek() + " vs " + hands[1].peek());
 		if (hands[0].peek().compareTo(hands[1].peek()) > 0) {
-			System.out.println("Player 1 gets both cards!");
+			System.out.println("Player 1 wins the round!");
 			hands[0].put(hands[1].remove());
 			hands[0].put(hands[0].remove());
 		}
 		else if (hands[1].peek().compareTo(hands[0].peek()) > 0) {
-			System.out.println("Player 2 gets both cards!");
+			System.out.println("Player 2 wins the round!");
 			hands[1].put(hands[0].remove());
 			hands[1].put(hands[1].remove());
 		} else { // WAR!
@@ -55,7 +55,7 @@ public class Main {
 				System.out.println("WAR!");
 				/* each player puts down 4 cards (or less, if they don't 
 				 * have 4 cards), with the last one face up */
-				for (int i = 0; i < 3; i++) { 
+				for (int i = 0; i < 4; i++) { 
 					if (!hands[0].isEmpty()) {
 						pile.put(hands[0].peek());
 						curUp1 = hands[0].remove();
