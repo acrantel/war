@@ -2,226 +2,223 @@
 War final project in AP CS A     
 
 Example Output:   
----------------
-Welcome to the Game of War!    
-Dealing the cards ...      
+--------------- 
+Welcome to the Game of War!                      
+Dealing the cards ...                      
+                      
+JC vs 5C                      
+Player 1 gets both cards!                      
+Player 1: 27 cards,Player 2: 25 cards                      
+                      
+2D vs 9H                      
+Player 2 gets both cards!                      
+Player 1: 26 cards,Player 2: 26 cards                      
+                      
+5H vs 7S                      
+Player 2 gets both cards!                      
+Player 1: 25 cards,Player 2: 27 cards                      
+                      
+8C vs KC                      
+Player 2 gets both cards!                      
+Player 1: 24 cards,Player 2: 28 cards                      
+                      
+3D vs 9C                      
+Player 2 gets both cards!                      
+Player 1: 23 cards,Player 2: 29 cards                      
 
-5S vs QS     
-Player 2 gets both cards!          
-Player 1: 25 cards,Player 2: 27 cards          
-
-9H vs 9D     
-WAR!     
-9S vs 8H     
-Player 1 wins the pile!     
-Player 1: 29 cards,Player 2: 23 cards     
-
-7H vs QD     
-Player 2 gets both cards!     
-Player 1: 28 cards,Player 2: 24 cards     
-
-TH vs JC     
-Player 1 gets both cards!     
-Player 1: 29 cards,Player 2: 23 cards     
-
-KD vs 3S     
-Player 1 gets both cards!               
-Player 1: 30 cards,Player 2: 22 cards               
-
-4S vs 2S                    
-Player 1 gets both cards!               
-Player 1: 31 cards,Player 2: 21 cards               
-
-6H vs TS     
-Player 2 gets both cards!               
-Player 1: 30 cards,Player 2: 22 cards               
-
-TC vs 8C     
-Player 1 gets both cards!               
-Player 1: 31 cards,Player 2: 21 cards               
-
-7C vs 4D     
-Player 1 gets both cards!               
-Player 1: 32 cards,Player 2: 20 cards               
-
-3C vs AH     
-Player 2 gets both cards!               
-Player 1: 31 cards,Player 2: 21 cards               
-
-8S vs 2D     
-Player 1 gets both cards!               
-Player 1: 32 cards,Player 2: 20 cards               
-
-AC vs AD     
-WAR!     
-QH vs 5D     
-Player 1 wins the pile!               
-Player 1: 36 cards,Player 2: 16 cards               
-
-6S vs 8D     
-Player 2 gets both cards!               
-Player 1: 35 cards,Player 2: 17 cards               
-
-7D vs 5H     
-Player 1 gets both cards!               
-Player 1: 36 cards,Player 2: 16 cards               
-
-JD vs JH     
-WAR!     
-6D vs 7S     
-Player 2 wins the pile!               
-Player 1: 32 cards,Player 2: 20 cards               
-
-3H vs KH     
-Player 2 gets both cards!               
-Player 1: 31 cards,Player 2: 21 cards               
-
-AS vs TD     
-Player 2 gets both cards!               
-Player 1: 30 cards,Player 2: 22 cards               
-
-8H vs 5S     
-Player 1 gets both cards!               
-Player 1: 31 cards,Player 2: 21 cards               
-
-9S vs QS     
-Player 2 gets both cards!               
-Player 1: 30 cards,Player 2: 22 cards               
-
-JS vs 7H     
-Player 1 gets both cards!               
-Player 1: 31 cards,Player 2: 21 cards               
-
-QC vs QD     
-WAR!     
-9D vs 3C     
-Player 1 wins the pile!               
-Player 1: 35 cards,Player 2: 17 cards               
-
-9H vs AH     
-Player 2 gets both cards!               
-Player 1: 34 cards,Player 2: 18 cards               
-
-JC vs 6S     
-Player 1 gets both cards!               
-Player 1: 35 cards,Player 2: 17 cards               
-
-TH vs 8D     
-Player 1 gets both cards!               
-Player 1: 36 cards,Player 2: 16 cards               
-
-3S vs 7S     
-Player 2 gets both cards!               
-Player 1: 35 cards,Player 2: 17 cards               
-
-KD vs 6D     
-Player 1 gets both cards!               
-Player 1: 36 cards,Player 2: 16 cards               
-
-2S vs 4C     
-Player 2 gets both cards!               
-Player 1: 35 cards,Player 2: 17 cards               
-
-4S vs 2C     
-Player 1 gets both cards!               
-Player 1: 36 cards,Player 2: 16 cards               
-
-8C vs 6C     
-Player 1 gets both cards!               
-Player 1: 37 cards,Player 2: 15 cards               
-
-TC vs 2H     
-Player 1 gets both cards!               
-Player 1: 38 cards,Player 2: 14 cards               
-
-4D vs JH     
-Player 2 gets both cards!               
-Player 1: 37 cards,Player 2: 15 cards               
-
-7C vs JD     
-Player 2 gets both cards!               
-Player 1: 36 cards,Player 2: 16 cards               
-
-2D vs 3H     
-Player 2 gets both cards!               
-Player 1: 35 cards,Player 2: 17 cards               
-
-8S vs KH     
-Player 2 gets both cards!               
-Player 1: 34 cards,Player 2: 18 cards               
-
-5D vs AS                    
-Player 2 gets both cards!               
-Player 1: 33 cards,Player 2: 19 cards               
-               
-QH vs TD                    
-Player 2 gets both cards!               
-Player 1: 32 cards,Player 2: 20 cards               
-               
-9C vs 9S                    
-WAR!                    
-KC vs AH                    
-Player 1 wins the pile!               
-Player 1: 36 cards,Player 2: 16 cards               
-               
-AD vs 3S                    
-Player 1 gets both cards!               
-Player 1: 37 cards,Player 2: 15 cards               
-               
-AC vs 7S                    
-Player 1 gets both cards!               
-Player 1: 38 cards,Player 2: 14 cards               
-               
-5H vs 2S                    
-Player 1 gets both cards!               
-Player 1: 39 cards,Player 2: 13 cards               
-               
-7D vs 4C                    
-Player 1 gets both cards!               
-Player 1: 40 cards,Player 2: 12 cards               
-               
-5S vs 4D                    
-Player 1 gets both cards!               
-Player 1: 41 cards,Player 2: 11 cards               
-               
-8H vs JH                    
-Player 2 gets both cards!               
-Player 1: 40 cards,Player 2: 12 cards               
-                    
-7H vs 7C     
-WAR!     
-9D vs 3H     
-Player 1 wins the pile!               
-Player 1: 44 cards,Player 2: 8 cards               
-               
-TS vs 8S                    
-Player 1 gets both cards!               
-Player 1: 45 cards,Player 2: 7 cards               
-               
-5C vs KH                    
-Player 2 gets both cards!               
-Player 1: 44 cards,Player 2: 8 cards               
-               
-6H vs 5D                    
-Player 1 gets both cards!               
-Player 1: 45 cards,Player 2: 7 cards               
-               
-4H vs AS                    
-Player 2 gets both cards!               
-Player 1: 44 cards,Player 2: 8 cards               
-               
-QD vs QH                    
-WAR!                    
-JC vs JH                    
-WAR!                    
-6D vs 4H                    
-Player 1 wins the pile!               
-Player 1: 51 cards,Player 2: 1 cards               
-               
-KD vs AS                    
-Player 1 gets both cards!               
-Player 1: 52 cards,Player 2: 0 cards               
-               
-The winner is... Player 1!               
-50 rounds played               
-
+QC vs 5S                      
+Player 1 gets both cards!                      
+Player 1: 24 cards,Player 2: 28 cards                      
+                      
+9D vs AS                      
+Player 2 gets both cards!                      
+Player 1: 23 cards,Player 2: 29 cards                      
+                      
+6H vs JS                      
+Player 2 gets both cards!                      
+Player 1: 22 cards,Player 2: 30 cards                      
+                      
+3H vs 3S                      
+WAR!                      
+7D vs KD                      
+Player 2 wins the war!                      
+Player 1: 18 cards,Player 2: 34 cards                      
+                      
+2S vs 4C                      
+Player 2 gets both cards!                      
+Player 1: 17 cards,Player 2: 35 cards                      
+                      
+3C vs 8H                      
+Player 2 gets both cards!                      
+Player 1: 16 cards,Player 2: 36 cards                      
+                      
+9S vs QH                      
+Player 2 gets both cards!                      
+Player 1: 15 cards,Player 2: 37 cards                      
+                      
+5D vs JH                                            
+Player 2 gets both cards!                      
+Player 1: 14 cards,Player 2: 38 cards                      
+                      
+2H vs 4D                      
+Player 2 gets both cards!                      
+Player 1: 13 cards,Player 2: 39 cards                      
+                      
+KH vs 6C                      
+Player 1 gets both cards!                      
+Player 1: 14 cards,Player 2: 38 cards                      
+                      
+AH vs TD                      
+Player 1 gets both cards!                      
+Player 1: 15 cards,Player 2: 37 cards                      
+                      
+7H vs TC                      
+Player 2 gets both cards!                      
+Player 1: 14 cards,Player 2: 38 cards                      
+                      
+2C vs 4H                      
+Player 2 gets both cards!                      
+Player 1: 13 cards,Player 2: 39 cards                      
+                      
+QS vs 7C                      
+Player 1 gets both cards!                      
+Player 1: 14 cards,Player 2: 38 cards                      
+                      
+TH vs AC                      
+Player 2 gets both cards!                      
+Player 1: 13 cards,Player 2: 39 cards                      
+                      
+8S vs 4S                      
+Player 1 gets both cards!                      
+Player 1: 14 cards,Player 2: 38 cards                      
+                      
+6D vs 6S                      
+WAR!                      
+JC vs 9H                      
+Player 1 wins the war!                      
+Player 1: 18 cards,Player 2: 34 cards                      
+                      
+5S vs 5H                      
+WAR!                      
+KH vs KC                      
+WAR!                      
+7C vs 9D                      
+Player 2 wins the war!                      
+Player 1: 11 cards,Player 2: 41 cards                      
+                      
+QS vs AS                      
+Player 2 gets both cards!                      
+Player 1: 10 cards,Player 2: 42 cards                      
+                      
+4S vs 6H                      
+Player 2 gets both cards!                      
+Player 1: 9 cards,Player 2: 43 cards                      
+                      
+8S vs JS                      
+Player 2 gets both cards!                      
+Player 1: 8 cards,Player 2: 44 cards                      
+                      
+9H vs KD                      
+Player 2 gets both cards!                      
+Player 1: 7 cards,Player 2: 45 cards                      
+                      
+JC vs 7D                      
+Player 1 gets both cards!                      
+Player 1: 8 cards,Player 2: 44 cards                      
+                      
+2D vs KS                      
+Player 2 gets both cards!                      
+Player 1: 7 cards,Player 2: 45 cards                      
+                      
+5C vs TS                      
+Player 2 gets both cards!                      
+Player 1: 6 cards,Player 2: 46 cards                      
+                      
+JD vs AD                      
+Player 2 gets both cards!                      
+Player 1: 5 cards,Player 2: 47 cards                      
+                      
+8D vs QD                      
+Player 2 gets both cards!                      
+Player 1: 4 cards,Player 2: 48 cards                      
+                      
+6S vs 3S                      
+Player 1 gets both cards!                      
+Player 1: 5 cards,Player 2: 47 cards                      
+                      
+6D vs 3H                      
+Player 1 gets both cards!                      
+Player 1: 6 cards,Player 2: 46 cards                      
+                      
+7D vs 2S                      
+Player 1 gets both cards!                      
+Player 1: 7 cards,Player 2: 45 cards                      
+                      
+JC vs 4C                      
+Player 1 gets both cards!                      
+Player 1: 8 cards,Player 2: 44 cards                      
+                      
+3S vs 3C                      
+WAR!                      
+6D vs QH                      
+Player 2 wins the war!                      
+Player 1: 4 cards,Player 2: 48 cards                      
+                      
+2S vs 5D                      
+Player 2 gets both cards!                      
+Player 1: 3 cards,Player 2: 49 cards                      
+                      
+7D vs JH                      
+Player 2 gets both cards!                      
+Player 1: 2 cards,Player 2: 50 cards                      
+                      
+4C vs 2H                      
+Player 1 gets both cards!                      
+Player 1: 3 cards,Player 2: 49 cards                      
+                      
+JC vs 4D                      
+Player 1 gets both cards!                      
+Player 1: 4 cards,Player 2: 48 cards                      
+                      
+2H vs 7H                      
+Player 2 gets both cards!                      
+Player 1: 3 cards,Player 2: 49 cards                      
+                      
+4C vs TC                      
+Player 2 gets both cards!                      
+Player 1: 2 cards,Player 2: 50 cards                      
+                      
+4D vs 2C                      
+Player 1 gets both cards!                      
+Player 1: 3 cards,Player 2: 49 cards                      
+                      
+JC vs 4H                      
+Player 1 gets both cards!                      
+Player 1: 4 cards,Player 2: 48 cards                      
+                      
+2C vs TH                      
+Player 2 gets both cards!                      
+Player 1: 3 cards,Player 2: 49 cards                      
+                      
+4D vs AC                      
+Player 2 gets both cards!                      
+Player 1: 2 cards,Player 2: 50 cards                      
+                      
+4H vs 9D                      
+Player 2 gets both cards!                      
+Player 1: 1 cards,Player 2: 51 cards                      
+                      
+JC vs 7C                      
+Player 1 gets both cards!                      
+Player 1: 2 cards,Player 2: 50 cards                      
+                      
+7C vs 9C                      
+Player 2 gets both cards!                      
+Player 1: 1 cards,Player 2: 51 cards                      
+                      
+JC vs AH                      
+Player 2 gets both cards!                      
+Player 1: 0 cards,Player 2: 52 cards                      
+                      
+The winner is... Player 2!                      
+51 rounds played
