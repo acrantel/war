@@ -111,5 +111,4 @@ public class Main {
 		Main runner = new Main();
 		runner.playWar();
 	}
-	
 }
