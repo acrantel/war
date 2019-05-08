@@ -72,7 +72,7 @@ public class Main {
 				System.out.println("Player 2 wins the war!");
 			}
 		}
-		System.out.println("Player 1: " + hands[0].size() + " cards," 
+		System.out.println("Player 1: " + hands[0].size() + " cards, " 
 				+ "Player 2: " + hands[1].size() + " cards");
 		System.out.println();
 		
