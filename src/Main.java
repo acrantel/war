@@ -6,7 +6,6 @@ public class Main {
 	private int rounds;
 	
 	public Main() {
-		// necessary cast because Java doesn't allow generic type arrays
 		hands = (Queue<Card>[]) new Queue[2]; 
 		hands[0] = new Queue<Card>();
 		hands[1] = new Queue<Card>();
@@ -14,9 +13,7 @@ public class Main {
 		rounds = 0;
 	}
 	
-	/**
-	 * Gives each hand 26 cards
-	 */
+	/** Gives each hand 26 cards */
 	public void deal() {
 		deck.shuffle();
 		for (int i = 0; i < 26; i++) {
@@ -81,17 +78,18 @@ public class Main {
 		
 	}
 	
-	/**
-	 * Add all the cards in pile to the hand.
+	/** Add all the cards in pile to the hand.
 	 * @param pile The pile containing the cards to be added.
-	 * @param hand The hand to add the cards in the pile to.
-	 */
+	 * @param hand The hand to add the cards in the pile to. */
 	private void addToHand(Stack<Card> pile, Queue<Card> hand) {
 		for (Card c : pile) {
 			hand.put(c);
 		}
 	}
 	
+	/** When the two cards put down are a tie, War occurs. Both players 
+	 * put 3 cards facedown, and place a 4th card to be compared. The winner
+	 * takes all, and if there is a tie, War happens again. */
 	public void playWar() {
 		System.out.println("Welcome to the Game of War!");
 		System.out.println("Dealing the cards ...");
